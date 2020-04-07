@@ -1,4 +1,5 @@
 ---
+layout: post
 published: true
 title: Keygenning diablo2oo2's crackme 1
 ---

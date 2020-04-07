@@ -1,4 +1,5 @@
 ---
+layout: post
 published: true
 title: Keygenning Zuma's crackme 3
 ---

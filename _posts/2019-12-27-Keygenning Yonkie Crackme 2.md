@@ -1,4 +1,5 @@
 ---
+layout: post
 published: true
 title: Keygenning Yonkie's crackme 2
 ---
