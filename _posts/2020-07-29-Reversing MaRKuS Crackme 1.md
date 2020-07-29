@@ -151,7 +151,7 @@ void DLL_patch(HMODULE base) {
 
  Thus, the API calls return what we want and are altered to specify different text on calling them.
 
- ## Source code
+## Source code
 
  Source code to the patch is [here.](https://github.com/mudlord/crackme_solutions/tree/master/markus_crack) 
 
