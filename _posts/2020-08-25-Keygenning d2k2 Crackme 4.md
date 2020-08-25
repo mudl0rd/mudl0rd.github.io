@@ -1,14 +1,11 @@
 ---
 layout: post
 published: true
-title: Keygenning diablo2oo2's crackme 4
+title: Reversing diablo2oo2's crackme 4
 ---
 ## Overview
 
-The following tutorial will document how to program a keygenerator for diablo2oo2's
-fourth crackme.
-
-
+The following tutorial will document diablo2oo2's fourth crackme.
 
 ![1.png]({{site.baseurl}}/images/crackme4/1.PNG)
 
