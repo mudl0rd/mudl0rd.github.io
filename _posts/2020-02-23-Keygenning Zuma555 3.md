@@ -6,7 +6,7 @@ title: Keygenning Zuma's crackme 3
 ## Overview
 
 The following tutorial will document how to program a keygenerator for Zuma555's
-second crackme.
+third crackme.
 
 This tutorial assumes you have some basic reversing knowledge, as well as familiarity with unpacking basic packers with the ESP trick.
 
