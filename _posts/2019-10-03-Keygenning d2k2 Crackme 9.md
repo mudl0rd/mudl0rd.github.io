@@ -117,7 +117,7 @@ void process_serial(char* name, char* serial_out)
 
 ## Keygen source code.
 
-[Source code to the keygen is here.](https://github.com/mudlord/crackme_solutions/blob/master/algo/d2k2_crackme09.c)
+[Source code to the keygen is here.](https://github.com/mudlord/crackme_solutions/blob/master/keygenned/algo/d2k2_crackme09.c)
 
 MSVC2019 is used to compile. It should compile out of the box. 
 

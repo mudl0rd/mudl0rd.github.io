@@ -85,7 +85,7 @@ This bit is a bit more complicated, and can be described as follows.
 
 ## Keygen source code.
 
-[Source code to the keygen is here.](https://github.com/mudlord/crackme_solutions/blob/master/algo/d2k2_crackme02.c)
+[Source code to the keygen is here.](https://github.com/mudlord/crackme_solutions/blob/master/keygenned/algo/d2k2_crackme02.c)
 
 The code implemented in the keygen reimplements the x86 assembly code in C and also has modifications to the algorithm to generate portions as needed to fit the criteria used in the last section of the crackme.
 

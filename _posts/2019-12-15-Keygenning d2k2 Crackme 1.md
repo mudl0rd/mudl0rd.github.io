@@ -36,6 +36,6 @@ The final checks are computed by this code. Using the computed buffer from earli
 
 ## Keygen source code.
 
-[Source code to the keygen is here.](https://github.com/mudlord/crackme_solutions/blob/master/algo/d2k2_crackme01.c)
+[Source code to the keygen is here.](https://github.com/mudlord/crackme_solutions/blob/master/keygenned/algo/d2k2_crackme01.c)
 
 The code implemented in the keygen reimplements the x86 assembly code in C and also has modifications to the algorithm to generate portions as needed to fit the criteria used in the last section of the crackme.

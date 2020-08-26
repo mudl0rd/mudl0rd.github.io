@@ -117,7 +117,7 @@ for (int i = 0; i < 4; i++)
 The code is done in this way to form a **exact mirror image** of the verification code. That is, the order of operations is the exact opposite and the mathematics used is the exact opposite of the verification function and the checking function. So really, all that was needed to solve was a little logic and backwards thinking, instead of just reverse engineering the code and reimplementing in C.
 
 ## Keygen source code.
-[Source code to the keygen is here.](https://github.com/mudlord/crackme_solutions/blob/master/algo/d2k2_crackme07.c)
+[Source code to the keygen is here.](https://github.com/mudlord/crackme_solutions/blob/master/keygenned/algo/d2k2_crackme07.c)
 MSVC2019 is used to compile. It should compile out of the box. Feel free to use the template for your own crackme keygens.
 
 

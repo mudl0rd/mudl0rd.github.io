@@ -117,7 +117,7 @@ For example, one of the example keyfiles has the following:
 N=Yonkie K=6A5327F384088CC003115600DC430419
 
 ## Keygen source code.
-[Source code to the keygen is here.](https://github.com/mudlord/crackme_solutions/blob/master/algo/yonkie_crackme2.c)
+[Source code to the keygen is here.](https://github.com/mudlord/crackme_solutions/blob/master/keygenned/algo/yonkie_crackme2.c)
 
 Using the above deduced info, to generate a valid serial is done by the following method
 

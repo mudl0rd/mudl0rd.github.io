@@ -156,7 +156,7 @@ int64_t* base64_ptr = b64encstr;
 
 ## Keygen source code.
 
-[Source code to the keygen is here.](https://github.com/mudlord/crackme_solutions/blob/master/algo/d2k2_crackme10.c)
+[Source code to the keygen is here.](https://github.com/mudlord/crackme_solutions/blob/master/keygenned/algo/d2k2_crackme10.c)
 
 MSVC2019 is used to compile. It should compile out of the box. 
 
