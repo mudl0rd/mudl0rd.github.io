@@ -7,6 +7,16 @@ title: Reversing diablo2oo2's crackme 4
 
 The following tutorial will document diablo2oo2's fourth crackme.
 
+This tutorial assumes you have some basic reversing knowledge.
+
+The crackme can be found [here.](https://github.com/mudlord/crackme_solutions/blob/master/crackmes/d2k2_crackme4.zip)
+
+## Tools
+
+You will need only x64dbg.
+
+## Analysis
+
 ![1.png]({{site.baseurl}}/images/crackme4/1.PNG)
 
 Load up the crackme in x64dbg. You will need to enable compatibility mode for "Windows XP (SP2)" if running on modern OSes.
@@ -25,11 +35,11 @@ Entering a serial that is 8 characters in length then leads to....
 
 There is some oddities to this particular code due to some bugs in the crackme.
 
-The first time the loop is executed, EDX is "0xFF" after the DEC dl instruction, thus there is a out-of-bounds string read on the serial, so DL starts at 0xFF and wraps to zero. On first runthrough, the CL register also is equal to 0. Also, due to another bug in the crackme, ESI is not equal to zero and so is set to the address of a subroutine in the crackme.
+In the first iteration of the loop shown, EDX starts at zero and is decremented by  ```dec dl```, so DX is now "0xFF" thus there is a out-of-bounds string read on the serial string, so DL starts at ```0xFF``` and wraps to zero. Due to this, the CL register also is equal to 0 and has no bearing on the resulting calculations. Also, due to another bug in the crackme, ESI is not equal to zero and so is set to the address of a subroutine in the crackme which is ```0x00401065```.
 
 The original intent of the code was to loop over the characters in the entered string and do some very basic maths with the ASCII values. But due to the aforementioned bugs, only 7 characters are used in the calculation.
 
-After the loop a XOR is done on the value in ESI with 0x8EF21B. The result of this calculation is used to alter the JMP address at 0x00402D16 from 
+After the loop a XOR is done on the value in ESI with ```0x8EF21B```. The result of this calculation is used to alter the JMP address at ```0x00402D16``` from 
 ![1.png]({{site.baseurl}}/images/crackme4/5.PNG) 
 
 to 
@@ -42,9 +52,9 @@ with the entered serial of "12345678"
 
 
 The rest of the code is some more maths on the XORed value as well as a jump to a unknown memory location.
-One interesting memory location is 0x00401193 which sets a serial box to the text buffer which is altered near the JMP's location.
+One interesting memory location is ```0x00401193``` which sets a serial box to the text buffer which is altered near the JMP's location.
 
-After some experimenting at the JMP location, I found 0xFFFFE479 is the hex value of the jump. To get EDI to be that value though, the ASCII characters need to form a sum which is 0xFFFFE479 XORed by 0x8EF21BD using the algorithm shown early.
+After some experimenting at the JMP location, I found ```0xFFFFE479``` is the hex value of the machine code of the JMP instruction jump to where the serial verification message is shown . To get EDI to be that value though, the ASCII characters need to form a sum which is ```0xFFFFE479``` XORed by ```0x8EF21BD``` using the algorithm shown earlier.
 
 To do this I wrote a small bruteforcer to run through ASCII strings until that value is met, using the method the crackme uses to calculate the rolling sum:
 
@@ -107,6 +117,7 @@ Using the following serial "<LT;S610", which was found:
 ![1.png]({{site.baseurl}}/images/crackme4/9.PNG) 
 ![1.png]({{site.baseurl}}/images/crackme4/10.PNG)
 ![1.png]({{site.baseurl}}/images/crackme4/11.PNG)  
+![1.png]({{site.baseurl}}/images/crackme4/12.PNG) 
 
 
 
