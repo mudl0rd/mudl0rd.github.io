@@ -10,6 +10,8 @@ tenth crackme.
 
 Functions, some addresses and variables are labeled to make the tutorial easier to follow.
 
+The crackme can be found [here.](https://github.com/mudlord/crackme_solutions/blob/master/crackmes/d2k2_crackme10.zip)
+
 
 ## Reverse engineering the crackme.
 

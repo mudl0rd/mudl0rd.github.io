@@ -10,6 +10,8 @@ fifth crackme.
 
 Experience in x86 assembly is assumed.
 
+The crackme can be found [here.](https://github.com/mudlord/crackme_solutions/blob/master/crackmes/d2k2_crackme5.zip)
+
 ## Unpacking the crackme.
 
 Load the crackme into x32dbg. Then, navigate to the "Memory Map" tab:

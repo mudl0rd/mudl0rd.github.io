@@ -8,6 +8,8 @@ title: Keygenning diablo2oo2's crackme 6
 The following tutorial will document how to unpack and program a keygenerator for diablo2oo2's
 sixth crackme.
 
+The crackme can be found [here.](https://github.com/mudlord/crackme_solutions/blob/master/crackmes/d2k2_crackme6.zip)
+
 ## Scanning the crackme.
 
 It is useful to scan the crackme for any protection or any possible hints as to the cryptography

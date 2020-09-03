@@ -10,6 +10,8 @@ third crackme.
 
 This tutorial assumes you have some basic reversing knowledge, as well as familiarity with unpacking basic packers with the ESP trick.
 
+The crackme can be found [here.](https://github.com/mudlord/crackme_solutions/blob/master/crackmes/zuma_crackme3.zip)
+
 ## Tools
 
 You will need

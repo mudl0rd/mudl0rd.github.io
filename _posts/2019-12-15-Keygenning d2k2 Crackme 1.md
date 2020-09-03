@@ -6,6 +6,8 @@ title: Keygenning diablo2oo2's crackme 1
 
 **Meant to be a a simple tutorial in debugging with x64dbg**
 
+The crackme can be found [here.](https://github.com/mudlord/crackme_solutions/blob/master/crackmes/d2k2_crackme1.zip)
+
 ![1.png]({{site.baseurl}}/images/crackme1/d2k2crkme1.PNG)
 
 Load up the crackme in x64dbg.

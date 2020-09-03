@@ -10,6 +10,8 @@ second crackme.
 
 Functions, some addresses and variables are labeled to make the tutorial easier to follow.
 
+The crackme can be found [here.](https://github.com/mudlord/crackme_solutions/blob/master/crackmes/yonkie_crackme.zip)
+
 Scanning with YARA-GUI yields the following:
 
 ![1.png]({{site.baseurl}}/images/yonkie2/1.PNG)

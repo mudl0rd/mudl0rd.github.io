@@ -10,6 +10,8 @@ eighth crackme.
 
 Functions and variables are labeled to make the tutorial easier to follow.
 
+The crackme can be found [here.](https://github.com/mudlord/crackme_solutions/blob/master/crackmes/d2k2_crackme8.zip)
+
 
 ## Reverse engineering the crackme.
 
