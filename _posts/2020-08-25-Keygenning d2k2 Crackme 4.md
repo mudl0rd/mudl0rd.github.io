@@ -9,7 +9,7 @@ The following tutorial will document diablo2oo2's fourth crackme.
 
 This tutorial assumes you have some basic reversing knowledge.
 
-The crackme can be found [here.](https://github.com/mudlord/crackme_solutions/blob/master/crackmes/d2k2_crackme4.zip)
+The crackme can be found [here.](https://github.com/mountnside/crackme_solutions/blob/master/crackmes/d2k2_crackme4.zip)
 
 ## Tools
 

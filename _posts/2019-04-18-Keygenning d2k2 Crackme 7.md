@@ -10,7 +10,7 @@ seventh crackme.
 
 Functions are labeled to make the tutorial easier to follow.
 
-The crackme can be found [here.](https://github.com/mudlord/crackme_solutions/blob/master/crackmes/d2k2_crackme7.zip)
+The crackme can be found [here.](https://github.com/mountnside/crackme_solutions/blob/master/crackmes/d2k2_crackme7.zip)
 
 
 ## Reverse engineering the crackme.
@@ -29,7 +29,7 @@ Immediately, there is some points of notice.
 3. The third argument of the "CreateThread" function points to a array of code at
 0x403288
 
-Place a breakpoint at 0x403288, enter any name into the name box (I used "mudlord") and run...
+Place a breakpoint at 0x403288, enter any name into the name box (I used "mountnside") and run...
 
 ![2.png]({{site.baseurl}}/images/crackme7/2.PNG)
 
@@ -119,7 +119,7 @@ for (int i = 0; i < 4; i++)
 The code is done in this way to form a **exact mirror image** of the verification code. That is, the order of operations is the exact opposite and the mathematics used is the exact opposite of the verification function and the checking function. So really, all that was needed to solve was a little logic and backwards thinking, instead of just reverse engineering the code and reimplementing in C.
 
 ## Keygen source code.
-[Source code to the keygen is here.](https://github.com/mudlord/crackme_solutions/blob/master/keygenned/algo/d2k2_crackme07.c)
+[Source code to the keygen is here.](https://github.com/mountnside/crackme_solutions/blob/master/keygenned/algo/d2k2_crackme07.c)
 MSVC2019 is used to compile. It should compile out of the box. Feel free to use the template for your own crackme keygens.
 
 

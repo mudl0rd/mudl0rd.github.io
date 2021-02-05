@@ -9,7 +9,7 @@ The following tutorial will document Zuma555's first cryptography keygenme, inte
 
 This tutorial assumes you have some x86 assembly reversing knowledge and experience in x64dbg usage.
 
-The crackme can be found [here.](https://github.com/mudlord/crackme_solutions/blob/master/crackmes/d2k2_crackme4.zip)
+The crackme can be found [here.](https://github.com/mountnside/crackme_solutions/blob/master/crackmes/d2k2_crackme4.zip)
 
 ## Tools
 

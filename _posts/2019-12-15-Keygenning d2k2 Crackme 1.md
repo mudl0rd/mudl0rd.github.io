@@ -6,7 +6,7 @@ title: Keygenning diablo2oo2's crackme 1
 
 **Meant to be a a simple tutorial in debugging with x64dbg**
 
-The crackme can be found [here.](https://github.com/mudlord/crackme_solutions/blob/master/crackmes/d2k2_crackme1.zip)
+The crackme can be found [here.](https://github.com/mountnside/crackme_solutions/blob/master/crackmes/d2k2_crackme1.zip)
 
 ![1.png]({{site.baseurl}}/images/crackme1/d2k2crkme1.PNG)
 
@@ -38,6 +38,6 @@ The final checks are computed by this code. Using the computed buffer from earli
 
 ## Keygen source code.
 
-[Source code to the keygen is here.](https://github.com/mudlord/crackme_solutions/blob/master/keygenned/algo/d2k2_crackme01.c)
+[Source code to the keygen is here.](https://github.com/mountnside/crackme_solutions/blob/master/keygenned/algo/d2k2_crackme01.c)
 
 The code implemented in the keygen reimplements the x86 assembly code in C and also has modifications to the algorithm to generate portions as needed to fit the criteria used in the last section of the crackme.

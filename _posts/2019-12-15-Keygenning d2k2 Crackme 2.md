@@ -10,7 +10,7 @@ second crackme.
 
 Functions, some addresses and variables are labeled to make the tutorial easier to follow.
 
-The crackme can be found [here.](https://github.com/mudlord/crackme_solutions/blob/master/crackmes/d2k2_crackme2.zip)
+The crackme can be found [here.](https://github.com/mountnside/crackme_solutions/blob/master/crackmes/d2k2_crackme2.zip)
 
 ![1.png]({{site.baseurl}}/images/crackme2/1.PNG)
 
@@ -87,7 +87,7 @@ This bit is a bit more complicated, and can be described as follows.
 
 ## Keygen source code.
 
-[Source code to the keygen is here.](https://github.com/mudlord/crackme_solutions/blob/master/keygenned/algo/d2k2_crackme02.c)
+[Source code to the keygen is here.](https://github.com/mountnside/crackme_solutions/blob/master/keygenned/algo/d2k2_crackme02.c)
 
 The code implemented in the keygen reimplements the x86 assembly code in C and also has modifications to the algorithm to generate portions as needed to fit the criteria used in the last section of the crackme.
 
