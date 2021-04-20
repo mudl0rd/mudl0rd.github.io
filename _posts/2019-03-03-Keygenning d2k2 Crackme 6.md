@@ -8,7 +8,7 @@ title: Keygenning diablo2oo2's crackme 6
 The following tutorial will document how to unpack and program a keygenerator for diablo2oo2's
 sixth crackme.
 
-The crackme can be found [here.](https://github.com/mountnside/crackme_solutions/blob/master/crackmes/d2k2_crackme6.zip)
+The crackme can be found [here.](https://github.com/mudlord/crackme_solutions/blob/master/crackmes/d2k2_crackme6.zip)
 
 ## Scanning the crackme.
 
@@ -166,9 +166,9 @@ Step 4 was just a continual process of comparing results in MSVC's debugger vs t
 
 ## Keygen source code.
 
-[Source code to the keygen is here.](https://github.com/mountnside/crackme_solutions/blob/master/algo/d2k2_crackme06.c)
+[Source code to the keygen is here.](https://github.com/mudlord/crackme_solutions/blob/master/algo/d2k2_crackme06.c)
 
-[The accompanying x86 assembly for the keygen is here.](https://github.com/mountnside/crackme_solutions/blob/master/keygenned/algo/d2k2_crackme06_hash.asm)
+[The accompanying x86 assembly for the keygen is here.](https://github.com/mudlord/crackme_solutions/blob/master/keygenned/algo/d2k2_crackme06_hash.asm)
 
 MSVC2017 is used to compile. It should compile out of the box. Feel free to use the template for your own crackme keygens.
 

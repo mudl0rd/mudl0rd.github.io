@@ -10,7 +10,7 @@ eighth crackme.
 
 Functions and variables are labeled to make the tutorial easier to follow.
 
-The crackme can be found [here.](https://github.com/mountnside/crackme_solutions/blob/master/crackmes/d2k2_crackme8.zip)
+The crackme can be found [here.](https://github.com/mudlord/crackme_solutions/blob/master/crackmes/d2k2_crackme8.zip)
 
 
 ## Reverse engineering the crackme.
@@ -31,7 +31,7 @@ Immediately, there is some points of notice.
 running the executable through the freeware version of IDA and using dihux's "RESIG" FLIRT signature
 collection.
 
-Place a breakpoint at 0x4026DF, enter any name into the name box (I used "mountnside"), enter a serial
+Place a breakpoint at 0x4026DF, enter any name into the name box (I used "mudlord"), enter a serial
 (I used the "ID shown") and run...
 
 ![3.png]({{site.baseurl}}/images/crackme8/3.PNG)
@@ -182,9 +182,9 @@ This can be implemented in C using mbedtls's bignum library as follows:
 
 ## Keygen source code.
 
-[Source code to the keygen is here.](https://github.com/mountnside/crackme_solutions/blob/master/algo/d2k2_crackme08.c)
+[Source code to the keygen is here.](https://github.com/mudlord/crackme_solutions/blob/master/algo/d2k2_crackme08.c)
 
-[The accompanying x86 assembly for the keygen is here.](https://github.com/mountnside/crackme_solutions/blob/master/keygenned/algo/d2k2_crackme08_hash.asm)
+[The accompanying x86 assembly for the keygen is here.](https://github.com/mudlord/crackme_solutions/blob/master/keygenned/algo/d2k2_crackme08_hash.asm)
 
 MSVC2019 is used to compile. It should compile out of the box, however you need to include the bignum library source files (included), into the solution. 
 

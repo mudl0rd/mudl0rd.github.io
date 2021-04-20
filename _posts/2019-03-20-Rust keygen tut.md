@@ -6,7 +6,7 @@ title: Keygenning diablo2oo2's crackme 1 (in Rust)
 
 **Meant to be a a simple tutorial in debugging with x64dbg and writing code in Rust**
 
-The crackme can be found [here.](https://github.com/mountnside/crackme_solutions/blob/master/crackmes/d2k2_crackme1.zip)
+The crackme can be found [here.](https://github.com/mudlord/crackme_solutions/blob/master/crackmes/d2k2_crackme1.zip)
 
 ![Imgur](https://i.imgur.com/gjoeDOx.png)
 

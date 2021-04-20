@@ -10,7 +10,7 @@ fifth crackme.
 
 Experience in x86 assembly is assumed.
 
-The crackme can be found [here.](https://github.com/mountnside/crackme_solutions/blob/master/crackmes/d2k2_crackme5.zip)
+The crackme can be found [here.](https://github.com/mudlord/crackme_solutions/blob/master/crackmes/d2k2_crackme5.zip)
 
 ## Unpacking the crackme.
 
@@ -106,4 +106,4 @@ The final string is then checked one final time, one character at a time using s
 
 Writing the keygen involved some debugging to check that the operations are perfect, byte per byte. The 128bit hash function was not reversed, however it was code spliced from the original crackme using [fearless' CopyToAsm plugin for x64dbg.](https://github.com/mrfearless/CopyToAsm-Plugin-x86)
 
-[Source code to the keygen is here.](https://github.com/mountnside/crackme_solutions/blob/master/keygenned/algo/d2k2_crackme05.c)
+[Source code to the keygen is here.](https://github.com/mudlord/crackme_solutions/blob/master/keygenned/algo/d2k2_crackme05.c)

@@ -9,7 +9,7 @@ The following tutorial will document how to patch MaRKuS TH-DJM's crackme.
 
 This tutorial assumes you have some basic reversing knowledge.
 
-The crackme can be found [here.](https://github.com/mountnside/crackme_solutions/blob/master/crackmes/markus_th-djm_crackme1.rar)
+The crackme can be found [here.](https://github.com/mudlord/crackme_solutions/blob/master/crackmes/markus_th-djm_crackme1.rar)
 
 ## Tools
 
@@ -103,7 +103,7 @@ BOOL _stdcall  hooksetwindow(
 	LPCSTR lpString)
 {
 	
-	return settext(hDlg,nIDDlgItem, "Cracked by mountnside, take that Markus ;)");
+	return settext(hDlg,nIDDlgItem, "Cracked by mudlord, take that Markus ;)");
 }
 
 typedef int(WINAPI* MessageBoxA2)
@@ -157,7 +157,7 @@ void DLL_patch(HMODULE base) {
 
 ## Source code
 
- Source code to the patch is [here.](https://github.com/mountnside/crackme_solutions/tree/master/markus_crack) 
+ Source code to the patch is [here.](https://github.com/mudlord/crackme_solutions/tree/master/markus_crack) 
 
 
 

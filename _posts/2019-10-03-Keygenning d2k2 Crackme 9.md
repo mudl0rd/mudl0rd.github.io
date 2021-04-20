@@ -10,7 +10,7 @@ ninth crackme.
 
 Functions, some addresses and variables are labeled to make the tutorial easier to follow.
 
-The crackme can be found [here.](https://github.com/mountnside/crackme_solutions/blob/master/crackmes/d2k2_crackme9.zip)
+The crackme can be found [here.](https://github.com/mudlord/crackme_solutions/blob/master/crackmes/d2k2_crackme9.zip)
 
 
 ## Reverse engineering the crackme.
@@ -40,7 +40,7 @@ In the callback 0x00401040, there is several things of note:
 ![4.png]({{site.baseurl}}/images/crackme9/4.PNG)
 
 
-Place a breakpoint at 0x00401040, enter any name into the name box (I used "mountnside"), enter a serial
+Place a breakpoint at 0x00401040, enter any name into the name box (I used "mudlord"), enter a serial
 (I used the serial shown above) and run...
 
 ![5.png]({{site.baseurl}}/images/crackme9/5.PNG)
@@ -51,7 +51,7 @@ In this routine.....
 ![6.png]({{site.baseurl}}/images/crackme9/6.PNG)
 
 * A new table is made using the username as a basis. The length is checked, and from there, a new table that wraps around to be the same length is made. For example if there is the initial table of:
-"0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ", the username "mountnside" would have a table of "stuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqr" because of the position used to start from to make a contiguous table of 62 characters.
+"0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ", the username "mudlord" would have a table of "stuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqr" because of the position used to start from to make a contiguous table of 62 characters.
 
 ![7.png]({{site.baseurl}}/images/crackme9/7.PNG)
 ![8.png]({{site.baseurl}}/images/crackme9/8.PNG)
@@ -119,7 +119,7 @@ void process_serial(char* name, char* serial_out)
 
 ## Keygen source code.
 
-[Source code to the keygen is here.](https://github.com/mountnside/crackme_solutions/blob/master/keygenned/algo/d2k2_crackme09.c)
+[Source code to the keygen is here.](https://github.com/mudlord/crackme_solutions/blob/master/keygenned/algo/d2k2_crackme09.c)
 
 MSVC2019 is used to compile. It should compile out of the box. 
 
