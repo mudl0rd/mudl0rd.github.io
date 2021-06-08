@@ -5,7 +5,7 @@ title: paraLLEl-RDP ported to PJ64 and Mupen64Plus
 ---
 # tldr;
 
-I have ported Themaister's paraLLEl-RDP to Project64 and Mupen64Plus.
+I have ported Themaister's [paraLLEl-RDP](https://github.com/Themaister/parallel-rdp) to Project64 and Mupen64Plus.
 It is most usable in loganmc10's ["m64p"](https://github.com/loganmc10/m64p) project. 
 Do not expect support/help on my end. I originally did this entirely for my own personal use.
 Use at your own risk. 
@@ -22,7 +22,7 @@ Various different APIs were, up to this point in time, used such as:
 * DirectX (various editions, up to version 9.0)
 
 
-There is an low-level software rasterizing RDP emulator plugin by the name of "Angrylion-RDP". Due to the lack of vectorization as well as threading (though a multithreading fork recently exists, but to me has its own set of problems), this has been somewhat very prohibitive to use apart for low level debugging N64 RDP behaviour/accuracy testing
+There is an low-level software rasterizing RDP emulator plugin by the name of [Angrylion-RDP](https://github.com/project64/angrylion-rdp). Due to the lack of vectorization as well as threading (though a [multithreading fork recently exists](https://github.com/ata4/angrylion-rdp-plus), but to me has its own set of problems), this has been somewhat very prohibitive to use apart for low level debugging N64 RDP behaviour/accuracy testing
 
 Recently, technology has moved to a point where it is feasible to pixel-level emulate the output of the Nintendo 64, by emulating the RDP's behaviour precisely, completely on the GPU. This could be done by porting the logic of "Angrylion-RDP" entirely as compute shaders. This was the genesis behind Themaister (a developer previously working for ARM's Mali division, now Valve) making a dot-accurate emulator using Vulkan. The current version of paraLLE1-RDP is the latest iteration of this work and is extremely accurate for RDP simulation, It was originally designed for the N64 libretro core "paraLLEl", but now it has been made modular to the point various other emulators now use it too for RDP emulation, such as Near's Ares and dillonb's "N64".
 
