@@ -62,6 +62,6 @@ As far as I know:
 
 ## Source code
 
-[PJ64 port.](https://github.com/mudlord/pj64-parallelrdpmudlord/pj64-parallelrdp)
+[PJ64 port.](https://github.com/mudlord/pj64-parallelrdp)
 
 [Mupen64Plus port.](https://github.com/mudlord/mupen64plus-video-parallel)
