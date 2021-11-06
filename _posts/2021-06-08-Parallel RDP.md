@@ -40,23 +40,16 @@ I would use a OpenGL rendering context (since I know OpenGL, from my past work, 
 
 The OpenGL blitting code itself is mostly salvaged from ata4's Angrylion-RDP fork, since to me it worked rather well, and to be honest, felt at the time didn't like reinventing the wheel since to me at the time, for my own personal use, I didn't see the harm.
 
-The Project64 port, was also very trivial, due to the vast similarities between Mupen64Plus's plugin API and PJ64's. The only major difference is a WTL-based app to handle configuration. During personal bugtesting, a process of compiling in GCC and then converting the DLL's debug symbols to PDB format was used to use MSVC as a debugger, due to its superior (to me) source level debugging abilities. 
+The Project64 port, was also very trivial, due to the vast similarities between Mupen64Plus's plugin API and PJ64's. During personal bugtesting, a process of compiling in GCC and then converting the DLL's debug symbols to PDB format was used to use MSVC as a debugger, due to its superior (to me) source level debugging abilities. 
 
 ## Problems
 
-As far as I know there is still some bugs from my ports, which I have been doing entirely in my spare time and whenever I feel motivated to program, rather than forcing myself time to do so.
-
-There is a complete lack of widespread bug testing. YMMV. Use at your own risk.
+As far as I know there is still some bugs from my ports, which I have been doing entirely in my spare time and whenever I feel motivated to program, rather than forcing myself time to do so. Other people, namely [Rosalie241](https://github.com/Rosalie241) and [Logan](https://github.com/loganmc10) have vastly fixed issues present as well as rewriting image copying to be more performant.
 
 As far as I know:
 
-- There is some problems with the WTL config app for PJ64 with saving settings sometimes.
-- Vsync for both ports might not work correctly.
-- Image scaling (such as overscan) might not work correctly. This can be a deal-breaker.
-- Image scaling for aspect ratio might not work correctly.
-- On Project64, there is no exclusive fullscreen
-- On both ports, there is no plain Vulkan texture blitting, everything is displayed on output using OpenGL 3.3. 
-- On both ports, there is no singular Vulkan context to do all the work (which on some systems might help a lot with speed, due to not needing to copy image buffers). There is a Vulkan context which performs compute, while OGL 3.3 rasterizes.
+- On Project64, there is no exclusive fullscreen.
+- On both ports, there is no plain Vulkan texture blitting and only one rendering context, everything is displayed on output using OpenGL 3.3, and computed using a headless Vulkan instance. 
 - On PJ64's side, various accuracy problems or downright freezes can occur when using Zilmar's RSP plugin. This is due to various RSP vector opcodes not being implemented correctly. As a workaround, when using Project64, using cxd4's RSP plugin can help with that, although that can some with a speed penalty on some systems.
 - 8x image rescaling will not work on the vast majority of video cards, due to the sheer amount of compute horsepower needed at that level. Its known to work on Nvidia RTX 3090's and similar level hardware. 4x image rescaling though, yields major benefits as well as working on systems that can handle it.
 
