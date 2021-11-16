@@ -12,7 +12,7 @@ Use at your own risk.
 
 ## Overview
 
-The N64 scene for some time has often for RDP emulation resorted to plugins (addons) for
+The N64 scene for some time has often for [RDP](https://en.wikipedia.org/wiki/Nintendo_64_technical_specifications#Reality_coprocessor) emulation resorted to plugins (addons) for
 N64 emulators to perform the tasks needed for graphics emulation. These often used a 
 high level emulation approach, and with varying middling degrees of success, a low level.
 
@@ -49,7 +49,7 @@ As far as I know there is still some bugs from my ports, which I have been doing
 As far as I know:
 
 - On Project64, there is no exclusive fullscreen.
-- On both ports, there is no plain Vulkan texture blitting and only one rendering context, everything is displayed on output using OpenGL 3.3, and computed using a headless Vulkan instance. 
+- On both ports, there is no plain Vulkan texture blitting and only one rendering context, everything is displayed on output using OpenGL 3.3, and computed using a headless Vulkan 1.1 instance. 
 - On PJ64's side, various accuracy problems or downright freezes can occur when using Zilmar's RSP plugin. This is due to various RSP vector opcodes not being implemented correctly. As a workaround, when using Project64, using cxd4's RSP plugin can help with that, although that can some with a speed penalty on some systems.
 - 8x image rescaling will not work on the vast majority of video cards, due to the sheer amount of compute horsepower needed at that level. Its known to work on Nvidia RTX 3090's and similar level hardware. 4x image rescaling though, yields major benefits as well as working on systems that can handle it.
 
@@ -57,4 +57,4 @@ As far as I know:
 
 [PJ64 port.](https://github.com/mudlord/pj64-parallelrdp)
 
-[Mupen64Plus port.](https://github.com/mudlord/mupen64plus-video-parallel)
+[Mupen64Plus port.](https://github.com/loganmc10/parallel-rdp-standalone)
