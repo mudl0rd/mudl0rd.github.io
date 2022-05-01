@@ -26,7 +26,7 @@ This is done through a two tier process:
 
 This had the added side effect of
 
-* Polling web APIs such as ones offered by [Deezer](www.deezer.com) for more song information.
+* Polling web APIs such as ones offered by [Deezer](https://www.deezer.com) for more song information.
 
 Logging the songs involved developing a [foobar2000](https://www.foobar2000.org) component to log streams as they
 are played, this was done over a period of 7 days.
