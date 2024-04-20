@@ -26,8 +26,8 @@ Thus [einweggerat](https://github.com/mudl0rd/einweggerat) was born. It was pure
 
 I eventually got as far as into adding a WTL based interface for einweggerat thus allowing for easy core loading, configuring joypad/game inputs per core by easy to see descriptions, and not by the clunky "RetroPad" interface RetroArch enforces, as well as an easy interface to change settings. 
 
-![1.png]({{site.baseurl}}/images/wtfweg/d2t7WD9.png)
-![1.png]({{site.baseurl}}/images/wtfweg/uZcxffp.png)
+![1.png]({site.baseurl}/images/wtfweg/d2t7WD9.png)
+![1.png]({site.baseurl}/images/wtfweg/uZcxffp.png)
 
 But to me, the interface was holding me back as well as the need to test Linux cores too. Thus WTFweg was made, based on residual code from einweggerat.
 
@@ -50,11 +50,11 @@ The major hurdle of debugging cores and converting symbols was completely sidest
 
 Most of the user interface hurdles are bypassed through [dear-imgui](https://github.com/ocornut/imgui), for relevant user interface duties, rather than Qt or some other UI toolkit.
 
-![1.png]({{site.baseurl}}/images/wtfweg/1.png)
-![1.png]({{site.baseurl}}/images/wtfweg/2.png)
-![1.png]({{site.baseurl}}/images/wtfweg/3.png)
-![1.png]({{site.baseurl}}/images/wtfweg/4.png)
-![1.png]({{site.baseurl}}/images/wtfweg/5.png)
+![1.png]({site.baseurl}/images/wtfweg/1.png)
+![1.png]({site.baseurl}/images/wtfweg/2.png)
+![1.png]({site.baseurl}/images/wtfweg/3.png)
+![1.png]({site.baseurl}/images/wtfweg/4.png)
+![1.png]({site.baseurl}/images/wtfweg/5.png)
 
  There is a flaw however to me that the renderer for dear-imgui is bound to the current one used to render core visuals. So if a Vulkan core is used, a Vulkan UI renderer has to be implemented and due to WTFweg's design, the renderer for all has to be reintialized per core to match. This could be mitigated with asset sharing between OpenGL 4.6 and Vulkan, however, using relevant GL extensions, with zero performance hit. Of course, on certain platforms like phones or Raspberry Pi, plain GLES2 can be mandated.
 
@@ -62,12 +62,12 @@ Transparently loading Windows libretro cores was a major goal for me, since ther
 
 Having an interface that expanded on einweggerat was vitally important for me, since I wanted to explore debugging other cores down the line. This included input selection for various devices including mice input, etc.
 
-![1.png]({{site.baseurl}}/images/wtfweg/9.png)
+![1.png]({site.baseurl}/images/wtfweg/9.png)
 
 "RetroPad", the abstraction libretro and RetroArch uses, is still used as a fallback on cores that rely so, with means to configuring it when a core isn't loaded, or such a core uses the "RetroPad" input abstraction. One of the major design goals of WTFweg was to remove it as much out of sight, out of mind as possible.
 
-![1.png]({{site.baseurl}}/images/wtfweg/7.png)
-![1.png]({{site.baseurl}}/images/wtfweg/8.png)
+![1.png]({site.baseurl}/images/wtfweg/7.png)
+![1.png]({site.baseurl}/images/wtfweg/8.png)
 
 There is still much for me to work personally on WTFweg such as:
 
